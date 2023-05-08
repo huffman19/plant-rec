@@ -1,0 +1,86 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/rectangle_1"
+	>
+
+	<!-- Generated using Figma/ExportKit | kwl (11/8/22) -->
+
+	<!-- Not entirely clear why ExportKit does these
+	     Likely due to how Figma works -->
+	<ScrollView
+		android:id="@+id/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+
+		<RelativeLayout
+			android:id="@+id/content_container"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+
+			<!-- Green circles background | Figma (11/8/22) -->
+			<!-- Invisible because it isn't the actual background
+				 but other objects reference it 				 -->
+			<ImageView
+				android:id="@+id/rectangle_1"
+				android:src="@drawable/rectangle_1"
+				android:contentDescription="rectangle_1"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:visibility="invisible" />
+
+			<ImageView
+				android:id="@+id/disp_img"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignTop="@id/rectangle_1"
+				android:layout_alignBottom="@id/takepicture"
+				android:layout_marginTop="10dp"
+				android:layout_alignLeft="@id/rectangle_1"
+				android:layout_alignRight="@id/rectangle_1"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"
+				android:src="@drawable/ic_launcher_foreground" />
+
+			<!-- "Take picture" button | Figma (11/8/22) -->
+			<ImageButton
+				android:id="@+id/takepicture"
+				android:layout_width="271dp"
+				android:layout_height="62dp"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="450dp"
+				android:background="@null"
+				android:contentDescription="image_1"
+				android:src="@drawable/image_1" />
+
+			<!-- "Upload image" button | Figma (11/8/22) -->
+			<ImageButton
+				android:id="@+id/upload"
+				android:layout_width="218dp"
+				android:layout_height="54dp"
+				android:layout_centerHorizontal="true"
+				android:layout_alignTop="@+id/rectangle_1"
+				android:layout_marginTop="530dp"
+				android:background="@null"
+				android:contentDescription="image_2"
+				android:src="@drawable/image_2" />
+
+			<!-- "Get results" button | Figma (11/8/22) -->
+			<ImageButton
+				android:id="@+id/display"
+				android:background="@null"
+				android:src="@drawable/image_3"
+				android:layout_centerHorizontal="true"
+				android:contentDescription="image_3"
+				android:layout_alignTop="@+id/rectangle_1"
+				android:layout_marginTop="600dp"
+				android:layout_width="218dp"
+				android:layout_height="54dp" />
+
+		</RelativeLayout>
+
+	</ScrollView>
+</HorizontalScrollView>
